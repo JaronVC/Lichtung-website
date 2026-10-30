@@ -1,0 +1,299 @@
+<style>
+
+ul li {
+    margin-bottom: 6px;
+}    /* changes spacing between items in list */
+
+  :root{
+    --green: #2c9961;
+    --green-dark: #1f7048;
+    --cream: #ffffff;
+    --ink: #232620;
+    --olive: #74755a;
+    --olive-line: #c9c6ac;
+    --rule: rgba(35,38,32,0.16);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.65;
+  }
+
+  a { color: inherit; }
+
+  .wrap{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Header / hero, styled after the green wordmark banner ---------- */
+
+  header.hero{
+    background: var(--green);
+    color: #fdfbfd;
+  }
+
+  .hero-inner{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 64px 28px 48px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .hero-mark{
+    flex: 0 0 auto;
+    width: 128px;
+    height: auto;
+    opacity: 0.96;
+  }
+
+  .hero-divider{
+    flex: 0 0 auto;
+    width: 1px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.957);
+  }
+
+  .hero-text h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: 0.5px;
+    margin: 0 0 6px;
+    line-height: 1;
+  }
+
+  .hero-text p{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    margin: 0;
+    color: rgba(255,255,255,0.92);
+  }
+
+  nav.primary{
+    border-top: 1px solid rgba(255,255,255,0.28);
+  }
+
+  nav.primary ul{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+  }
+
+  nav.primary a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.92);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+
+  nav.primary a:hover{
+    border-bottom-color: rgba(255, 255, 255, 0.75);
+  }
+
+  /* ---------- Sunburst divider, after the booklet cover's mark ---------- */
+
+  .sunburst{
+    display: block;
+    margin: 56px auto;
+    width: 220px;
+    height: auto;
+    color: var(--olive);
+  }
+
+  /* ---------- Sections ---------- */
+
+  section{
+    padding: 8px 0 44px;
+  }
+
+  section h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2.2px;
+    color: var(--olive);
+    margin: 0 0 26px;
+  }
+
+  section h3{
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0 0 14px;
+  }
+
+  p{ margin: 0 0 18px; }
+
+  blockquote{
+    margin: 28px 0;
+    padding: 2px 0 2px 22px;
+    border-left: 2px solid var(--olive-line);
+    font-style: italic;
+    color: #3a3d34;
+  }
+
+  blockquote p{ margin: 0 0 12px; }
+  blockquote p:last-child{ margin: 0; }
+
+  .lede{
+    font-size: 21px;
+    color: #2e3128;
+  }
+
+  hr.rule{
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+  }
+
+  /* Submissions */
+
+  .deadline-box{
+    border: 1px solid var(--olive-line);
+    padding: 22px 26px;
+    margin: 0 0 28px;
+  }
+
+  .deadline-box .label{
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    color: var(--olive);
+    margin-bottom: 6px;
+  }
+
+  .deadline-box .date{
+    font-size: 24px;
+  }
+
+  dl.guidelines{
+    margin: 0;
+    padding: 0;
+  }
+
+  dl.guidelines dt{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  dl.guidelines dt:first-child{ margin-top: 0; }
+
+  dl.guidelines dd{
+    margin: 4px 0 0;
+    color: #3a3d34;
+  }
+
+  a.submit-email{
+    text-decoration: underline;
+    text-decoration-color: var(--olive-line);
+    text-underline-offset: 3px;
+  }
+
+  /* Team */
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 40px;
+}
+
+.team-group {
+  margin-bottom: 0;
+}
+  .team-group h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    color: var(--olive);
+    margin: 0 0 10px;
+  }
+
+  .team-group ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .team-group li{ margin-bottom: 4px; }
+
+  /* Contact */
+
+  .contact-lines p{
+    margin: 0 0 6px;
+    font-size: 19px;
+  }
+
+  .contact-lines .label{
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    color: var(--olive);
+    display: block;
+    margin: 20px 0 3px;
+  }
+
+  .contact-lines .label:first-child{ margin-top: 0; }
+
+  /* ---------- Footer, mirrors the hero band ---------- */
+
+  footer{
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.85);
+    margin-top: 20px;
+  }
+
+  .footer-inner{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 36px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .footer-inner .wordmark{
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    color: #fdfdfb;
+  }
+
+  .footer-inner a{ color: rgba(255,255,255,0.85); text-decoration: none; }
+  .footer-inner a:hover{ text-decoration: underline; }
+
+  @media (max-width: 560px){
+    .hero-inner{ padding: 44px 22px 34px; gap: 20px; }
+    .hero-mark{ width: 88px; }
+    .hero-text h1{ font-size: 40px; }
+    .hero-text p{ font-size: 17px; }
+    nav.primary ul{ gap: 16px 22px; padding: 12px 22px; }
+    body{ font-size: 18px; }
+  }
+</style>
