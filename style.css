@@ -210,6 +210,82 @@ ul li {
     text-underline-offset: 3px;
   }
 
+  /* Previous edition */
+
+  .flipbook{
+    border: 1px solid var(--olive-line);
+    padding: 24px;
+  }
+
+  .flipbook-page{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 240px;
+    background: #ffffff;
+  }
+
+  .flipbook-page canvas{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .flipbook-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 20px;
+  }
+
+  .flipbook-controls button{
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 2px 0;
+    color: var(--ink);
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+  }
+
+  .flipbook-controls button:hover:not(:disabled){
+    border-bottom-color: var(--olive-line);
+  }
+
+  .flipbook-controls button:disabled{
+    color: var(--olive-line);
+    cursor: default;
+  }
+
+  .flipbook-indicator{
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    color: var(--olive);
+    min-width: 64px;
+    text-align: center;
+  }
+
+  .flipbook-fallback{
+    margin: 16px 0 0;
+    font-size: 14px;
+    text-align: center;
+    color: var(--olive);
+  }
+
+  .flipbook-fallback a{
+    color: var(--olive);
+    text-decoration: underline;
+    text-decoration-color: var(--olive-line);
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 560px){
+    .flipbook{ padding: 16px; }
+  }
+
   /* Team */
 
 
