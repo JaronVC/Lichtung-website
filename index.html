@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css" >
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lichtung - Undergraduate Journal of Philosophy at Ugent</title>
+<title>Lichtung</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
- <script type="application/ld+json">  <!-- Search engine optimization --> 
+ <script type="application/ld+json">  <!-- Search engine optimization -->
   {
     "@context": "https://schema.org",
     "@type": "Periodical",
     "name": "Lichtung",
     "url": "https://lichtung.gent/",
-    "description": "An undergraduate philosophy journal at Ghent University that came from KMF (Kring moraal filosofie), publishing student work in philosophy and moral science",es and rel
+    "description": "An undergraduate philosophy journal at Ghent University that came from KMF (Kring moraal filosofie), publishing student work in philosophy and moral science",
     "inLanguage": ["en", "nl", "fr", "de"],
     "publisher": {
       "@type": "EducationalOrganization",
@@ -36,15 +36,21 @@
     <div class="hero-divider"></div>
     <div class="hero-text">
       <h1>Lichtung</h1>
-      <p>Undergraduate Journal of Philosophy</p>
+      <p data-en="Undergraduate Journal of Philosophy" data-nl="Undergraduate Journal of Philosophy">Undergraduate Journal of Philosophy</p>
     </div>
   </div>
   <nav class="primary">
     <ul>
-      <li><a href="#journal">The Journal</a></li>
-      <li><a href="#submit">Submit</a></li>
-      <li><a href="#team">The Team</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#journal" data-en="The Journal" data-nl="De journal">De journal</a></li>
+      <li><a href="#archive" data-en="Previous Edition" data-nl="Vorige editie">Vorige editie</a></li>
+      <li><a href="#submit" data-en="Submit" data-nl="Indienen">Indienen</a></li>
+      <li><a href="#team" data-en="The Team" data-nl="Het team">Het team</a></li>
+      <li><a href="#contact" data-en="Contact" data-nl="Contact">Contact</a></li>
+      <li class="lang-toggle" role="group" aria-label="Taal / Language">
+        <button type="button" data-lang="nl" aria-pressed="true">NL</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </li>
     </ul>
   </nav>
 </header>
@@ -65,17 +71,55 @@
       <circle cx="110" cy="20" r="4" fill="currentColor"/>
     </svg>
 
-    <h2>What is <i>Lichtung</i>?</h2>
-     <p>Lichtung is a brand new journal publishing papers with a relevance in moral sciences and philosophy. We are a student-led journal affiliated with the Faculty of Arts and Philosophy at Ghent University that wants to prove that undergraduate students' work is worth to be shown to the world, rather than to disappear in some dusty drawer.</p>
-    <p class="lede">We at Lichtung believe in the strength and quality of undergraduate work. We strive to be a platform that gives a voice to undergraduate students, first and foremost in philosophy and moral sciences. We want to publish promising bachelor papers and master dissertations and avoid them disappearing in some dusty university drawer, never to be read again.</p>
-    <p>In "the Origin of the Work of Art", Martin Heidegger wrote the following:</p>
+    <h3 data-en="What is <i>Lichtung</i>?" data-nl="Wat is <i>Lichtung</i>?">Wat is <i>Lichtung</i>?</h3>
+     <p data-en="Lichtung is a brand new journal publishing papers with a relevance in moral sciences and philosophy. We are a student-led journal affiliated with the Faculty of Arts and Philosophy at Ghent University that wants to prove that undergraduate students' work is worth to be shown to the world, rather than to disappear in some dusty drawer." data-nl="Lichtung is een gloednieuw tijdschrift dat papers publiceert met relevantie voor de moraalwetenschappen en de wijsbegeerte. We zijn een studentengedreven tijdschrift, verbonden aan de Faculteit Letteren en Wijsbegeerte van de Universiteit Gent, dat wil aantonen dat het werk van bachelorstudenten het verdient om aan de wereld getoond te worden, in plaats van te verdwijnen in een stoffige lade.">Lichtung is een nieuw academisch journal dat spraakmakende papers in de filosofie en moraalwetenschappen
+ publiceert. We zijn een studentengedreven journal, verbonden aan de Faculteit Letteren en Wijsbegeerte van de Universiteit Gent, dat wil aantonen dat het werk van bachelorstudenten het verdient om het daglicht te zien, in plaats van te verdwijnen in een stoffige lade.</p>
+    <p class="lede" data-en="We at Lichtung believe in the strength and quality of undergraduate work. We strive to be a platform that gives a voice to undergraduate students, first and foremost in philosophy and moral sciences. We want to publish promising bachelor papers and master dissertations and avoid them disappearing in some dusty university drawer, never to be read again." data-nl="Bij Lichtung geloven we in de kracht en de kwaliteit van het werk van studenten. We zijn een platform om hen een stem te geven door veelbelovende papers te publiceren..">Bij Lichtung geloven we in de kracht en de kwaliteit van het werk van studenten. We zijn een platform om hen een stem te geven door veelbelovende papers geschreven door studenten te publiceren.</p>
+    <p data-en="In &ldquo;the Origin of the Work of Art&rdquo;, Martin Heidegger wrote the following:" data-nl="In &lsquo;De oorsprong van het kunstwerk&rsquo; schreef Martin Heidegger het volgende:">In &lsquo;De oorsprong van het kunstwerk&rsquo; schreef Martin Heidegger het volgende:</p>
 
     <blockquote>
-      <p>&ldquo;In the midst of being as a whole an open place occurs. There is a clearing, a lighting. Thought of in reference to what is, to beings, this clearing is in a greater degree than are beings. This open center is therefore not surrounded by what is; rather, the lighting center itself encircles all that is, like the Nothing which we scarcely know. That which is can only be, as a being, if it stands within and stands out within what is lighted in this clearing. Only this clearing grants and guarantees to us humans a passage to those beings that we ourselves are not, and access to the being that we ourselves are.&rdquo;</p>
-      <p>— Martin Heidegger, <em>The Origin of the Work of Art</em></p>
+      <p data-en="&ldquo;In the midst of being as a whole an open place occurs. There is a clearing, a lighting. Thought of in reference to what is, to beings, this clearing is in a greater degree than are beings. This open center is therefore not surrounded by what is; rather, the lighting center itself encircles all that is, like the Nothing which we scarcely know. That which is can only be, as a being, if it stands within and stands out within what is lighted in this clearing. Only this clearing grants and guarantees to us humans a passage to those beings that we ourselves are not, and access to the being that we ourselves are.&rdquo;" data-nl="&ldquo; Te midden van het zijnde in zijn geheel weest een open plek. Een lichting is. Deze is, vanuit het zijnde gedacht, zíjn dan het zijnde. Dit open midden is daarom niet door het zijnde omsloten; eerder omcirkelt het lichtende midden zelf, als het niets dat we nauwelijks kennen, al het zijnde. Het zijnde kan slechts als zijnde zijn wanneer het binnen de verlichte ruimte van deze lichting staat en daarin naar voren treedt. Alleen deze lichting schenkt en waarborgt ons mensen een doorgang naar de zijnden die wij zelf niet zijn, en toegang tot het zijnde dat wij zelf zijn.&rdquo;">&ldquo;Te midden van het zijnde in zijn geheel weest een open plek. Een lichting is. Deze is, vanuit het zijnde gedacht, zíjn dan het zijnde. Dit open midden is daarom niet door het zijnde omsloten; eerder omcirkelt het lichtende midden zelf, als het niets dat we nauwelijks kennen, al het zijnde. Het zijnde kan slechts als zijnde zijn wanneer het binnen de verlichte ruimte van deze lichting staat en daarin naar voren treedt. Alleen deze lichting schenkt en waarborgt ons mensen een doorgang naar de zijnden die wij zelf niet zijn, en toegang tot het zijnde dat wij zelf zijn.&rdquo;</p>
+      <p data-en="&mdash; Martin Heidegger, <em>The Origin of the Work of Art</em>" data-nl="&mdash; Martin Heidegger, <em>De oorsprong van het kunstwerk</em>">&mdash; Martin Heidegger, <em>De oorsprong van het kunstwerk</em></p>
     </blockquote>
 
-    <p>Of course the aim of this undergraduate journal is not to take upon ourselves this task of Heidegger in illuminating Being as the Being of Beings, but rather to give a sense to and retain that serene atmosphere implied in the word "Lichtung"; an open spot in the forest in which, we may hope, the thought of students worth hearing about can stand out and shine forth brightly.</p>
+    <p data-en="Of course the aim of this undergraduate journal is not to take upon ourselves this task of Heidegger in illuminating Being as the Being of Beings, but rather to give a sense to and retain that serene atmosphere implied in the word &ldquo;Lichtung&rdquo;; an open spot in the forest in which, we may hope, the thought of students worth hearing about can stand out and shine forth brightly." data-nl="Het is uiteraard niet de bedoeling van deze journal om de taak van Heidegger op ons te nemen en het Zijn als het Zijn van het zijnde te belichten, maar wel om betekenis te geven aan &mdash; en vast te houden aan &mdash; de serene sfeer die besloten ligt in het woord &lsquo;Lichtung&rsquo;: een open plek in het bos waar, zo hopen we, de gedachten van studenten die het waard zijn om gehoord te worden, kunnen opvallen en helder kunnen stralen.">Het is uiteraard niet de bedoeling van deze journal om de taak van Heidegger op ons te nemen en het Zijn als het Zijn van het zijnde te belichten, maar wel om betekenis te geven aan &mdash; en vast te houden aan &mdash; de serene sfeer die besloten ligt in het woord &lsquo;Lichtung&rsquo;: een open plek in het bos waar, zo hopen we, de gedachten van studenten die het waard zijn om gehoord te worden, kunnen opvallen en helder kunnen stralen.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="archive">
+    <svg class="sunburst" viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <line x1="0" y1="20" x2="94" y2="20" stroke="currentColor" stroke-width="1"/>
+      <line x1="126" y1="20" x2="220" y2="20" stroke="currentColor" stroke-width="1"/>
+      <g stroke="currentColor" stroke-width="1">
+        <line x1="110" y1="4" x2="110" y2="36"/>
+        <line x1="98" y1="8" x2="122" y2="32"/>
+        <line x1="122" y1="8" x2="98" y2="32"/>
+        <line x1="100" y1="20" x2="120" y2="20"/>
+        <line x1="110" y1="10" x2="110" y2="30"/>
+      </g>
+      <circle cx="110" cy="20" r="4" fill="currentColor"/>
+    </svg>
+
+    <h3 data-en="Previous Edition" data-nl="Vorige editie">Vorige editie</h3>
+    <p data-en="Read the inaugural edition of <i>Lichtung</i>, 2024." data-nl="Lees de eerste editie van <i>Lichtung</i> uit 2024.">Lees de eerste editie van <i>Lichtung</i> uit 2024.</p>
+
+    <!--
+      To add the PDF: save it in this same folder and set its filename
+      in the data-pdf attribute just below (it reads lichtung-issue-1.pdf
+      by default). Nothing else needs to change.
+    -->
+    <div class="flipbook" id="flipbook" data-pdf="lichtung_2024.pdf">
+      <div class="flipbook-page">
+        <canvas id="flipbook-canvas"></canvas>
+      </div>
+      <div class="flipbook-controls">
+        <button type="button" class="flipbook-prev" aria-label="Vorige pagina" data-en="&lsaquo; Previous" data-nl="&lsaquo; Vorige">&lsaquo; Vorige</button>
+        <span class="flipbook-indicator" id="flipbook-indicator">Bezig met laden&hellip;</span>
+        <button type="button" class="flipbook-next" aria-label="Volgende pagina" data-en="Next &rsaquo;" data-nl="Volgende &rsaquo;">Volgende &rsaquo;</button>
+      </div>
+      <p class="flipbook-fallback" data-en="Having trouble viewing it here? <a href='Lichtung_2024.pdf'>Open the PDF directly</a>." data-nl="Lukt het bekijken hier niet? <a href='Lichtung_2024.pdf'>Open de PDF rechtstreeks</a>.">Lukt het bekijken hier niet? <a href="Lichtung_2024.pdf">Open de PDF rechtstreeks</a>.</p>
+    </div>
   </section>
 
   <hr class="rule">
@@ -94,25 +138,25 @@
       <circle cx="110" cy="20" r="4" fill="currentColor"/>
     </svg>
 
-    <h2>Submissions</h2>
-    <h3>Send us your work</h3>
+    <h3 data-en="Submissions" data-nl="Inzendingen">Inzendingen</h3>
+
 
     <div class="deadline-box">
-      <div class="label">Current deadline</div>
-      <div class="date">To be announced</div>
+      <div class="label" data-en="Current deadline" data-nl="Huidige deadline">Huidige deadline</div>
+      <div class="date" data-en="To be announced" data-nl="Nog te bepalen">Nog te bepalen</div>
     </div>
 
-    <p>Are you an undergraduate student in philosophy or moral sciences? Send us your papers and be a part of our mission to show the talent of undergraduate students! Not only can you share your work with others in the field, it will also show future students the importance and fun of studying philosophy and moral sciences. All subjects are welcome, but be sure to first check our submission guidelines.</p>
-    <p>Are you an undergraduate student in some other field that's not moral sciences or philosophy, but you have written a paper with philosophical or ethical value from within your own field? Be sure to submit and maybe your paper will be published too, showing that philosophy and moral sciences have a role to play in many different disciplines throughout the whole university.</p>
+    <p data-en="Are you an undergraduate student in philosophy or moral sciences? Send us your papers and be a part of our mission to show the talent of undergraduate students! Not only can you share your work with others in the field, it will also show future students the importance and fun of studying philosophy and moral sciences. All subjects are welcome, but be sure to first check our submission guidelines." data-nl="Ben je student wijsbegeerte of moraalwetenschappen? Stuur ons je paper en maak deel uit van onze missie om het talent van studenten te tonen! Zo deel je niet alleen je werk met anderen in het vakgebied, je toont ook toekomstige studenten hoe belangrijk en boeiend het is om wijsbegeerte en moraalwetenschappen te studeren. Alle onderwerpen zijn welkom, maar bekijk zeker eerst onze richtlijnen voor inzendingen.">Ben je student wijsbegeerte of moraalwetenschappen? Stuur ons je paper en maak deel uit van onze missie om het talent van studenten te tonen! Zo deel je niet alleen je werk met anderen in het vakgebied, je toont ook toekomstige studenten hoe belangrijk en boeiend het is om wijsbegeerte en moraalwetenschappen te studeren. Alle onderwerpen zijn welkom, maar bekijk zeker eerst onze richtlijnen voor inzendingen.</p>
+    <p data-en="Are you an undergraduate student in some other field that's not moral sciences or philosophy, but you have written a paper with philosophical or ethical value from within your own field? Be sure to submit and maybe your paper will be published too, showing that philosophy and moral sciences have a role to play in many different disciplines throughout the whole university." data-nl="Studeer je iets anders dan moraalwetenschappen of wijsbegeerte, maar schreef je een filosofische of moraalwetenschappelijke paper vanuit je eigen vakgebied? Stuur hem dan zeker in! Misschien wordt jouw paper gepubliceerd en kan je aantonen dat wijsbegeerte en moraalwetenschappen een rol spelen in uiteenlopende disciplines doorheen de hele universiteit.">Studeer je iets anders dan moraalwetenschappen of wijsbegeerte, maar schreef je een filosofische of moraalwetenschappelijke paper vanuit je eigen vakgebied? Stuur hem dan zeker in! Misschien wordt jouw paper gepubliceerd en kan je aantonen dat wijsbegeerte en moraalwetenschappen een rol spelen in uiteenlopende disciplines doorheen de hele universiteit.</p>
 
-    <h3>Guidelines</h3>
+    <h2 data-en="Guidelines" data-nl="Richtlijnen">Richtlijnen</h2>
 <ul>
-  <li>Send your submission to <a class="submit-email" href="mailto:lichtung@ugent.be">lichtung@ugent.be</a></li>
-  <li>Preferably an editable file (.docx or .odt) so that the editorial team can work with it</li>
-  <li>The word count should range between 5.000 and 7.500 words (excluding references and bibliography).</li>
-  <li>Your submission should be written in Times New Roman with line spacing 1.15.</li>
-  <li>Bibliography style: Chicago Manual of Style, 17th edition, endnotes.</li>
-  <li>Your submission may be written in any of the following languages: English, Dutch, French, or German.</li>
+  <li data-en="Send your submission to <a class='submit-email' href='mailto:lichtung@ugent.be'>lichtung@ugent.be</a>" data-nl="Stuur je inzending naar <a class='submit-email' href='mailto:lichtung@ugent.be'>lichtung@ugent.be</a>">Stuur je inzending naar <a class="submit-email" href="mailto:lichtung@ugent.be">lichtung@ugent.be</a></li>
+  <li data-en="Preferably an editable file (.docx or .odt) so that the editorial team can work with it" data-nl="Bij voorkeur een bewerkbaar bestand (.docx of .odt), zodat de redactie ermee aan de slag kan">Bij voorkeur een bewerkbaar bestand (.docx of .odt), zodat de redactie ermee aan de slag kan</li>
+  <li data-en="The word count should range between 5.000 and 7.500 words (excluding references and bibliography)." data-nl="Het aantal woorden ligt tussen 5.000 en 7.500 (exclusief referenties en bibliografie).">Het aantal woorden ligt tussen 5.000 en 7.500 (exclusief referenties en bibliografie).</li>
+  <li data-en="Your submission should be written in Times New Roman with line spacing 1.15." data-nl="Je inzending is geschreven in Times New Roman met een regelafstand van 1,15.">Je inzending is geschreven in Times New Roman met een regelafstand van 1,15.</li>
+  <li data-en="Bibliography style: Chicago Manual of Style, 17th edition, endnotes." data-nl="Bibliografiestijl: Chicago Manual of Style, 17de editie, eindnoten.">Bibliografiestijl: Chicago Manual of Style, 17de editie, eindnoten.</li>
+  <li data-en="Your submission may be written in any of the following languages: English, Dutch, French, or German." data-nl="Je inzending mag geschreven zijn in een van de volgende talen: Engels, Nederlands, Frans of Duits.">Je inzending mag geschreven zijn in een van de volgende talen: Engels, Nederlands, Frans of Duits.</li>
 </ul>
 
   </section>
@@ -133,13 +177,13 @@
       <circle cx="110" cy="20" r="4" fill="currentColor"/>
     </svg>
 
-    <h2>The Team</h2>
-<p>Allow us to introduce ourselves.</p>
+    <h3 data-en="The Team" data-nl="Het team">Het team</h3>
+
 
 <div class="team-grid">
 
   <div class="team-group">
-    <h4>Editors</h4>
+    <h4 data-en="Editors" data-nl="Redactie">Redactie</h4>
     <ul>
       <li>Jaron Van Cleemput</li>
       <li>Andries Didden</li>
@@ -148,7 +192,7 @@
   </div>
 
   <div class="team-group">
-    <h4>Design</h4>
+    <h4 data-en="Design" data-nl="Vormgeving">Vormgeving</h4>
     <ul>
       <li>Jakob De Smaele</li>
     </ul>
@@ -180,14 +224,14 @@
       <circle cx="110" cy="20" r="4" fill="currentColor"/>
     </svg>
 
-    <h2>Contact</h2>
-    <h3>Ask us anything</h3>
+    <h3 data-en="Contact" data-nl="Contact">Contact</h3>
+
 
     <div class="contact-lines">
-      <span class="label">Email</span>
+      <span class="label" data-en="Email" data-nl="E-mail">E-mail</span>
       <p><a href="mailto:lichtung@ugent.be">lichtung@ugent.be</a></p>
 
-      <span class="label">Facebook</span>
+      <span class="label" data-en="Facebook" data-nl="Facebook">Facebook</span>
       <p><a href="https://www.facebook.com/profile.php?id=100090556650929" target="_blank" rel="noopener">facebook.com/lichtung</a></p>
     </div>
   </section>
@@ -204,6 +248,10 @@
     </a>
   </div>
 </footer>
+
+<script src="lang.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script src="flipbook.js" defer></script>
 
 </body>
 </html>

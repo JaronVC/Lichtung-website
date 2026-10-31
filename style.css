@@ -109,6 +109,39 @@ ul li {
     border-bottom-color: rgba(255, 255, 255, 0.75);
   }
 
+  .lang-toggle{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .lang-toggle button{
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: rgba(255,255,255,0.65);
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+  }
+
+  .lang-toggle button:hover{
+    color: rgba(255,255,255,0.9);
+  }
+
+  .lang-toggle button.is-active{
+    color: #fdfbfd;
+    border-bottom-color: rgba(255,255,255,0.75);
+  }
+
+  .lang-toggle span{
+    color: rgba(255,255,255,0.45);
+    font-size: 14px;
+  }
+
   /* ---------- Sunburst divider, after the booklet cover's mark ---------- */
 
   .sunburst{
@@ -126,19 +159,19 @@ ul li {
   }
 
   section h2{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 2.2px;
-    color: var(--olive);
-    margin: 0 0 26px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 14px;
   }
 
   section h3{
-    font-family: 'EB Garamond', serif;
-    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
     font-size: 26px;
-    margin: 0 0 14px;
+    letter-spacing: 2.2px;
+    color: var(--olive);
+    margin: 0 0 26px;
   }
 
   p{ margin: 0 0 18px; }
