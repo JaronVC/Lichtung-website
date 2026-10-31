@@ -17,7 +17,7 @@
 
   var titles = {
     en: "Lichtung - Undergraduate Journal of Philosophy at Ugent",
-    nl: "Lichtung - Studententijdschrift Wijsbegeerte aan de UGent"
+    nl: "Lichtung - Filosofie journal aan de UGent"
   };
 
   function getStoredLang() {
